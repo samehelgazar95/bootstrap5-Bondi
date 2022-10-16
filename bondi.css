@@ -1,0 +1,180 @@
+:root {
+  --dark-color: #19283f;
+  --section-color: #eff7fa;
+  --green-color: #33d1cc;
+  --button-bg: #ff3150;
+  --button-color: #ffc400;
+  
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+  color: var(--button-color);
+  background-color: var(--button-bg);
+}
+.main-btn:hover {
+  color: var(--section-color);
+}
+
+/* Start NavBar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link.active {
+  color: var(--green-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--section-color);
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .navbar-collapse .form-control:focus {
+  outline: var(--green-color);
+  box-shadow: none;
+}
+.navbar .navbar-toggler {
+  border: 1px solid var(--section-color);
+}
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
+@media (min-width: 1200px) {
+  .navbar .collapse .nav-item:not(:last-child) {
+      margin-left: 15px;
+    }
+}
+/* End NavBar */
+/* Start Landing */
+.landing {
+  background-color: var(--dark-color);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 66.45px);
+}
+/* End Landing */
+/* Start Features */
+.main-title::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 15%;
+  background-color: var(--green-color);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .feat .icons {
+  height: 200px;
+}
+.features .feat .icons svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .feat .icons .nums {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .feat .icons .seconds {
+  font-size: 4rem;
+  bottom: 10px;
+  color: var(--green-color);
+}
+.features .feat h2 {
+  color: var(--button-color);
+}
+/* End Features */
+/* Start Our Work */
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul li.active {
+  color: var(--button-color);
+  background-color: var(--button-bg);
+}
+.our-work .row .bg-white {
+  padding: 5px;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.our-work .row .bg-white::before {
+  content: "Application";
+  position: absolute;
+  background-color: #33d1ccd6;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: calc(-100% + 15px);
+  transition: .5s;
+}
+.our-work .row .bg-white:hover::before {
+  left: 5px;
+}
+
+/* End Our Work */
+/* Start about-us */
+.about-us .description {
+  max-width: 600px;
+}
+/* End about-us */
+/* Start Team */
+.team {
+  background-color: var(--section-color);
+}
+.team .container h2 {
+  color: var(--button-color);
+}
+.team-member h4 {
+  background-color: var(--green-color);
+}
+/* End Team */
+/* Start own project */
+.own-project {
+  background-color: var(--dark-color);
+}
+/* End own project */
+/* Start Subscribe  */
+.subcribe {
+  background-color: var(--button-color);
+}
+.subcribe .mail input {
+  background-color: var(--button-color);
+  border: none;
+  color: var(--section-color);
+  border-bottom: 1px solid var(--section-color);
+}
+.subcribe .mail input::placeholder {
+  color: var(--section-color);
+}
+.subcribe .mail input:hover,
+.subcribe .mail input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+.subcribe .mail input:hover::placeholder,
+.subcribe .mail input:focus::placeholder {
+  color: var(--dark-color);
+}
+.subcribe button {
+  color: var(--button-color);
+  background-color: var(--dark-color);
+}
+.subcribe button:hover {
+  color: var(--button-color);
+}
+/* End Subscribe  */
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .foot-first .version p span {
+  color: var(--button-color);
+}
+/* End Footer */
